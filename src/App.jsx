@@ -15,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Homepage />} />
           <Route path="/professor" element={<ProfessorDashboard />} />
           <Route path="/review" element={<GrantCommitteeDashboard />} />
+          <Route path="*" element={<Homepage />} /> {/* Fallback route */}
         </Routes>
       </Router>
     </QueryClientProvider>
