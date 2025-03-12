@@ -2,6 +2,7 @@
   "name": "frontend",
   "private": false,
   "version": "0.0.0",
+  "homepage": "https://mahikajaguste.github.io/grant-management-frontend",
   "type": "module",
   "scripts": {
     "dev": "vite",
