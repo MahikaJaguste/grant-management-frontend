@@ -22,7 +22,7 @@ const ApplicationList = ({ applicationLoader, title }) => {
   return (
     <div className="container mt-4">
       <h3>{title}</h3>
-      <table className="table p-3 border rounded">
+      <table className="table table-striped table-bordered">
         <thead>
           <tr>
             <th>ID</th>

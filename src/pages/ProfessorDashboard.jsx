@@ -11,15 +11,16 @@ const ProfessorDashboard = () => {
   const tabs = [
     { label: "Application Form", path: "form" },
     { label: "My Applications", path: "applications" },
+    { label: "Notifications", path: "notifications" },
   ];
 
   return (
     <div>
       <Header title="Professor Dashboard" tabs={tabs} onTabClick={setSelectedTab} />
-      <div className="main-content">
+      <div className="main-content pt-5">
         {selectedTab === "form" && <ApplicationForm />}
         {selectedTab === "applications" && <ApplicationList applicationLoader={useApplications} title={"My Applications"} />}
-        <Notifications notificationLoader={useProfessorNotifications} />
+        {selectedTab === "notifications" && <Notifications notificationLoader={useProfessorNotifications} />}
       </div>
       <Footer />
     </div>

@@ -11,15 +11,16 @@ const GrantCommitteeDashboard = () => {
   const tabs = [
     { label: "Pending Applications", path: "pending" },
     { label: "Reviewed Applications", path: "reviewed" },
+    { label: "Notifications", path: "notifications" },
   ];
 
   return (
     <div>
       <Header title="Grant Committee Dashboard" tabs={tabs} onTabClick={setSelectedTab} />
-      <div className="main-content">
+      <div className="main-content pt-5">
         {selectedTab === "pending" && <ReviewPanel />}
         {selectedTab === "reviewed" && <ApplicationList applicationLoader={useReviewedApplications} title={"Reviewed Applications"} />}
-        <Notifications notificationLoader={useCommitteeNotifications} />
+        {selectedTab === "notifications" && <Notifications notificationLoader={useCommitteeNotifications} />}
       </div>
       <Footer />
     </div>

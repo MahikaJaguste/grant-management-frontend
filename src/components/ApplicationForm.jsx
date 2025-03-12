@@ -57,13 +57,13 @@ const ApplicationForm = () => {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 mb-5">
+      <h3>New Application</h3>
       <form onSubmit={handleSubmit} className="p-3 border rounded">
         <input
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          
           placeholder="Enter grant title"
           className="form-control mb-2"
         />
@@ -151,7 +151,7 @@ const ApplicationForm = () => {
           placeholder="Enter data management plan"
           className="form-control mb-2"
         />
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-olive">Submit</button>
       </form>
     </div>
   );

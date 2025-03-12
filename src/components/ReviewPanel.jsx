@@ -28,7 +28,7 @@ const ReviewPanel = () => {
       {isLoadingPending ? (
         <p>Loading pending applications...</p>
       ) : (
-        <table className="table p-3 border rounded">
+        <table className="table table-striped table-bordered">
           <thead>
             <tr>
               <th>ID</th>
@@ -52,8 +52,8 @@ const ReviewPanel = () => {
                   </button>
                 </td>
                 <td>
-                  <button onClick={() => handleUpdateStatus(app.id, ApplicationStatusEnum.APPROVED)}>Approve</button>
-                  <button onClick={() => handleUpdateStatus(app.id, ApplicationStatusEnum.REJECTED)}>Reject</button>
+                  <button className="btn btn-olive" onClick={() => handleUpdateStatus(app.id, ApplicationStatusEnum.APPROVED)}>Approve</button> &nbsp; &nbsp;
+                  <button className="btn btn-danger" onClick={() => handleUpdateStatus(app.id, ApplicationStatusEnum.REJECTED)}>Reject</button>
                 </td>
               </tr>
             ))}

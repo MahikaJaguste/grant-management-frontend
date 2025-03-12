@@ -3,6 +3,7 @@ import ProfessorDashboard from "./pages/ProfessorDashboard";
 import { QueryClient, QueryClientProvider } from "react-query";
 import GrantCommitteeDashboard from "./pages/GrantCommitteeDashboard";
 import Homepage from "./pages/Homepage";
+import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is included
 
 const queryClient = new QueryClient();
 
