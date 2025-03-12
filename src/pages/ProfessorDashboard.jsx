@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const ProfessorDashboard = () => {
-  const [selectedTab, setSelectedTab] = useState("form");
+  const [selectedTab, setSelectedTab] = useState("applications");
   const tabs = [
     { label: "Application Form", path: "form" },
     { label: "My Applications", path: "applications" },
